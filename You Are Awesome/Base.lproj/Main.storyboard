@@ -38,11 +38,16 @@
                                     <action selector="anotherMessageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TXa-8P-pCd"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="eAo-c8-wGF">
+                                <rect key="frame" x="16" y="157" width="341" height="490"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="eAo-c8-wGF" id="Hcu-IF-18g"/>
                         <outlet property="messageLabel" destination="s4g-sp-773" id="dcG-dz-WlK"/>
                     </connections>
                 </viewController>
@@ -51,4 +56,7 @@
             <point key="canvasLocation" x="261.60000000000002" y="-124.58770614692655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image0" width="475" height="633"/>
+    </resources>
 </document>
