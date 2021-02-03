@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad did run!")
-        messageLabel.text = "Fabulous? That's You!"
+        messageLabel.text = ""
         imageView.image = UIImage(named: "image0")
     }
 
@@ -23,16 +23,8 @@ class ViewController: UIViewController {
         print("The messaged button was pressed!")
         messageLabel.text = "You Are Awesome!"
         messageLabel.textColor = UIColor.blue
-        messageLabel.textAlignment = .left
         imageView.image = UIImage(named: "image1")
     }
     
-    @IBAction func anotherMessageButtonPressed(_ sender: UIButton) {
-        print("The second messaged button was pressed!")
-        messageLabel.text = "You Are Great!"
-        messageLabel.textColor = .systemRed
-        messageLabel.textAlignment = .right
-        imageView.image = UIImage(named: "image2")
-    }
 }
 
