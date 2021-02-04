@@ -16,14 +16,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("viewDidLoad did run!")
         messageLabel.text = ""
-        imageView.image = UIImage(named: "image0")
     }
 
     @IBAction func messageButtonPressed(_ sender: UIButton) {
-        print("The messaged button was pressed!")
-        messageLabel.text = "You Are Awesome!"
-        messageLabel.textColor = UIColor.blue
-        imageView.image = UIImage(named: "image1")
+        let awesomeMessage = "You Are Awesome!"
+        let greatMessage = "You Are Great!"
+        let bMessage = "You Are Da Bomb!"
+        
+        if messageLabel.text == awesomeMessage {
+            messageLabel.text = greatMessage
+            messageLabel.textColor = UIColor.blue
+            imageView.image = UIImage(named: "image0")
+        } else if  messageLabel.text == greatMessage {
+            messageLabel.text = bMessage
+            messageLabel.textColor = UIColor.red
+            imageView.image = UIImage(named: "image1")
+        } else {
+            messageLabel.text = awesomeMessage
+            messageLabel.textColor = UIColor.green
+            imageView.image = UIImage(named: "image2")
+        }
     }
     
 }
