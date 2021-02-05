@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         imageView.image = UIImage(named: "image\(Int.random(in: 0 ... imageTotal))")
         
         
-        
     }
     
 }
